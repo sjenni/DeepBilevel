@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+<p align="center">
+  <b style="font-size: 20px">Paper (coming soon):</b><br>
+  <a href="http://???" style="font-size: 20px; text-decoration: none">[Arxiv]</a>
+</p>
 
-You can use the [editor on GitHub](https://github.com/sjenni/DeepBilevel/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+![Algorithm](assets/algorithm.png)
+*The training procedure of our bilevel formulation. At each iteration we sample mini-batches from the data set, which we split into a validation and a training set. The validation is used to define the weights of the loss gradient used in the stochastic gradient descent to update the model parameters. If the gradients of the training set and those of the validation set agree, then the weights are large and positive. Vice versa, if they disagree the weights might be zero or negative.*
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Abstract
 
-### Markdown
+We present a novel regularization approach to train neural networks that enjoys better generalization and test error than standard stochastic gradient descent. Our approach is based on the principles of cross-validation, where a validation set is used to limit the model overfitting. We formulate such principles as a bilevel optimization problem. This formulation allows us to define the optimization of a cost on the validation set subject to another optimization on the training set. The overfitting is controlled by introducing weights on each mini-batch in the training set and by choosing their values so that they minimize the error on the validation set. In practice, these weights define mini-batch learning rates in a gradient descent update equation that favor gradients with better generalization capabilities. Because of its simplicity, this approach can be integrated with other regularization methods and training schemes. We evaluate extensively our proposed algorithm on several neural network architectures and datasets, and find that it consistently improves the generalization of the model, especially when labels are noisy.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Code
 
-```markdown
-Syntax highlighted code block
+<p align="center">
+  <b style="font-size: 20px">Code:</b><br>
+  <a href="https://github.com/sjenni/DeepBilevel" style="font-size: 20px; text-decoration: none">[GitHub]</a>
+</p>
 
-# Header 1
-## Header 2
-### Header 3
+# Results
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sjenni/DeepBilevel/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![Comparison](assets/Comparison.png)
+*Comparison on CIFAR-10 and CIFAR-100 to state-of-the-art regularization techniques and methods for dealing with label noise on 40% corrupted labels.*
