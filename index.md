@@ -3,7 +3,7 @@
   <a href="http://???" style="font-size: 20px; text-decoration: none">[Arxiv]</a>
 </p>
 
-![Algorithm](assets/algorithm.png)
+![Algorithm](assets/Algorithm.png)
 *The training procedure of our bilevel formulation. At each iteration we sample mini-batches from the data set, which we split into a validation and a training set. The validation is used to define the weights of the loss gradient used in the stochastic gradient descent to update the model parameters. If the gradients of the training set and those of the validation set agree, then the weights are large and positive. Vice versa, if they disagree the weights might be zero or negative.*
 
 # Abstract
