@@ -1,6 +1,6 @@
 <p align="center">
-  <b style="font-size: 20px">Paper (coming soon):</b><br>
-  <a href="http://???" style="font-size: 20px; text-decoration: none">[Arxiv]</a>
+  <b style="font-size: 20px">Paper:</b><br>
+  <a href="https://arxiv.org/abs/1809.01465" style="font-size: 20px; text-decoration: none">[Arxiv]</a>
 </p>
 
 ![Algorithm](assets/Algorithm.png)
