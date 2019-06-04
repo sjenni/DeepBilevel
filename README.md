@@ -3,7 +3,7 @@
 This repository contains demo code of our ECCV2018 [paper](https://arxiv.org/abs/1809.01465). It contains code for bilevel training of an Inception network on the CIFAR-10 dataset with noisy labels. 
 
 ## Requirements
-The code is based on Python 2.7 and tensorflow 1.12. See requirements.txt for all required packages.
+The code is based on Python 2.7 and tensorflow 1.12.
 
 ## How to use it
 
