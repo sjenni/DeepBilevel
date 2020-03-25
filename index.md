@@ -1,3 +1,10 @@
+
+
+
+![Algorithm](assets/Algorithm.png)
+***The training procedure of our bilevel formulation.*** *At each iteration we sample mini-batches from the data set, which we split into a validation and a training set. The validation is used to define the weights of the loss gradient used in the stochastic gradient descent to update the model parameters. If the gradients of the training set and those of the validation set agree, then the weights are large and positive. Vice versa, if they disagree the weights might be zero or negative.*
+
+
 <p align="center">
   <b style="font-size: 24px">Paper:</b><br>
   <a href="https://arxiv.org/abs/1809.01465" style="font-size: 24px; text-decoration: none">[Arxiv]</a>
@@ -9,9 +16,6 @@
   <a href="https://github.com/sjenni/DeepBilevel" style="font-size: 24px; text-decoration: none">[GitHub]</a>
 </p>
 
-
-![Algorithm](assets/Algorithm.png)
-***The training procedure of our bilevel formulation.*** *At each iteration we sample mini-batches from the data set, which we split into a validation and a training set. The validation is used to define the weights of the loss gradient used in the stochastic gradient descent to update the model parameters. If the gradients of the training set and those of the validation set agree, then the weights are large and positive. Vice versa, if they disagree the weights might be zero or negative.*
 
 # Abstract
 
